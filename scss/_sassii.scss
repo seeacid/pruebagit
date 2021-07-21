@@ -1,0 +1,29 @@
+@mixin boxs ($wid,$hei,$bac,$col) {
+    width:$wid ;
+    height:$hei ;
+    background-color:$bac ;
+    color:$col ;
+    
+}
+
+$box1w:100px;
+$box2w:150px;
+$box3w:75px;
+$box1h:150px;
+$box2h:200px;
+$box3h:55px;
+$col1:red;
+$col2:blue;
+$col3:#770c77;
+$bg1:orange;
+$bg2:orchid;
+$bg3:purple;
+
+
+
+
+
+
+.box1{
+    @include boxs($box1h,$box1w ,$bg1 ,$col1 )
+}

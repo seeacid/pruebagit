@@ -1,0 +1,168 @@
+@import "header";
+@import "medias";
+@import "footer";
+@import "variables"
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    header{
+        @include bgc($bgb,$bgw );
+        height: 10rem;
+    }
+
+    .seccion{
+        font-family: "Dela Gothic One", cursive;
+        font-weight: lighter;
+        .seccion__lista{
+          li{
+              margin: 20px;
+          }  
+        }
+        .seccion__grilla{
+            position: relative;
+            left: 25%;
+            width: 50%;
+            height: 60rem;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+              "img car"
+              "img ins"
+              "comprar size";
+
+            .seccion__grilla__foto{
+                grid-area: img;
+                justify-self: end;
+                align-self: end;
+            }
+            .seccion__grilla__caracteristicas {
+                grid-area: car;
+                justify-self: start;
+                align-self: end;
+                ul{
+                    li{
+                        text-align: left;
+                    }
+                }
+            }
+            .seccion__grilla__instrucciones {
+                grid-area: ins;
+                justify-self: start;
+                ol{
+                    li{
+                        text-align: left;
+                    }
+                }
+            }
+            .seccion__grilla__talles {
+                grid-area: size;
+                align-self: start;
+                margin-bottom: 2rem;
+            }
+            .sizeChart table {
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                text-align: center;
+                font-family: "Roboto", sans-serif;
+            }
+            .seccion__grilla__comprar{
+                h2{
+                    grid-area: comprar;
+                    text-decoration: none;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    margin: 0px;
+                }
+            }
+        }
+        .seccion__formulario{
+            height: 500px;
+            position: relative;
+            top: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: $bgb;
+            font-weight: bolder;
+            font-family: "Dela Gothic One", cursive;
+            font-weight: lighter;
+            &:hover{
+                color: rgb(70, 70, 70); 
+            }
+        }
+        h2 {
+            font-style: oblique;
+            text-decoration: underline;
+        }
+        .seccion__carousel{
+            width: 40%;
+            height: 40%;
+            margin: auto;
+        }
+        form {
+            font-family: "Roboto", sans-serif;
+        }
+        ol{
+            font-size: 14pt;
+            font-family: "Roboto", sans-serif;
+            list-style-position: inside;
+            a{
+                font-family: "Roboto", sans-serif;
+                font-weight: bold;
+                font-size: 12pt;
+            }
+        }
+        ul{
+            list-style: none;
+            font-size: 14pt;
+            font-family: "Roboto", sans-serif; 
+        }
+        table{
+            background-color: $bgb;
+        }
+        th{
+            border: rgb(255, 255, 255) 1px solid;
+            color: $bgw; 
+        }
+        td{
+            border: rgb(255, 255, 255) 1px solid;
+            color: $bgw;
+        }
+        h3{
+            font-family: "Roboto", sans-serif; 
+        }
+        .seccion__productos{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-wrap: wrap;
+            .productox{
+                display: inline-block;
+                padding-left: 100px;
+                padding-right: 100px;
+                img{
+                    &:hover{
+                        transform: scale(1.5, 1.5);   
+                    }
+                }
+            }
+        }
+    }
+    
+}
+

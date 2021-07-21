@@ -1,0 +1,54 @@
+
+    @media only screen and (max-width: 767px) and (min-width: 5px) {
+        header{
+            height: 30%;
+        }
+        video{
+            width: 200px;
+        }
+        .carrx{
+            width: 80%;
+            height: 80%;
+        }
+        .titulo{
+            img{
+                width: 70px;
+            }
+        }
+    
+        .navList{
+            ul{
+                display: block;
+            }
+            li{
+                display: block;
+                margin: 10px;
+            }
+        }
+        .prod{
+            ul{
+                li{
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 1023px) and (min-width: 768px) {    
+        .navList{
+            li{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    
+        .carrx{
+            width: 60%;
+            height: 60%;
+        }
+    
+        video{
+            width: 300px;
+        }
+    }    
+    
